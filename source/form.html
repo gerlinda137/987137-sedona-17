@@ -38,67 +38,66 @@
         <h2 class="feedback-intro__title">Оставьте свой отзыв</h2>
         <p class="feedback-intro__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </section>
-      <section class="introduction">
-        <h2 class="introduction__title">Представьтесь</h2>
-        <fieldset class="introduction__form">
-          <label for="name-field">Имя*:</label>
-          <input type="text" name="name" id="name-field" placeholder="Петр">
+      <form class="main-form" action="form.html" method="post">
+        <section class="introduction">
+          <h2 class="introduction__title">Представьтесь</h2>
+          <fieldset class="introduction__form">
+            <label for="name-field">Имя*:</label>
+            <input type="text" name="name" id="name-field" placeholder="Петр">
 
-          <label for="surname-field">Фамилия*:</label>
-          <input type="text" name="surname" id="surname-field" placeholder="Иванов">
+            <label for="surname-field">Фамилия*:</label>
+            <input type="text" name="surname" id="surname-field" placeholder="Иванов">
 
-          <label for="patronymic-field">Отчество:</label>
-          <input type="text" name="patronymic" id="patronymic-field" placeholder="Александрович">
-        </fieldset>
-      </section>
-      <section class="contact-info">
-        <h2 class="contact-info__title">Контактная информация</h2>
-        <fieldset class="contact-info__form" action="form.html" method="get">
-          <label for="tel-field">Контактный телефон*:</label>
-          <input type="tel" name="tel" id="tel-field" placeholder="Введите телефон">
+            <label for="patronymic-field">Отчество:</label>
+            <input type="text" name="patronymic" id="patronymic-field" placeholder="Александрович">
+          </fieldset>
+        </section>
+        <section class="contact-info">
+          <h2 class="contact-info__title">Контактная информация</h2>
+          <fieldset class="contact-info__form" action="form.html" method="get">
+            <label for="tel-field">Контактный телефон*:</label>
+            <input type="tel" name="tel" id="tel-field" placeholder="Введите телефон">
 
-          <label for="tel-field">Электронная почта*:</label>
-          <input type="email" name="email" id="email-field" placeholder="Введите e-mail">
-        </form>
-      </section>
-      <section class="impression">
-        <fieldset class="impression__form">
-          <legend>Ваше общее впечатление:</legend>
-          <label>
-            <input type="radio" name="impression" value="a" checked> Скорее положительное
-          </label>
-          <label>
-            <input type="radio" name="impression" value="b"> Скорее отрицательное
-          </label>
-          <label>
-            <input type="radio" name="impression" value="c"> Затрудняюсь ответить
-          </label>
-        </fieldset>
-      </section>
-      <section class="sightseeings">
-        <fieldset class="sightseeings__checkboxes">
-          <legend>Посещенные достопримечательности:</legend>
-          <ul class="obect-list">
-            <li class="obect-list__item"><input type="checkbox" name="devilbridge" id="bridge-field" checked>
-            <label for="bridge-field">Мост Дьявола</label></li>
-            <li class="obect-list__item"><input type="checkbox" name="bellrock" id="bellrock-field" checked>
-            <label for="bellrock-field">Гора-Колокол</label></li>
-            <li class="obect-list__item"><input type="checkbox" name="slidepark" id="slidepark-field" checked>
-            <label for="slidepark-field">Слайд-Парк</label></li>
-            <li class="obect-list__item"><input type="checkbox" name="redrocks" id="redrocks-field">
-            <label for="redrocks-field">Красные скалы</label></li>
-          </ul>
-        </fieldset>
-      </section>
-      <section class="emotions">
-        <form class="emotions__form">
-          <label for="letter-field">Опишите свои эмоции:</label>
-          <textarea name="letter" rows="8" cols="16" id="letter-field" placeholder="Опишите подробно все свои восторги"></textarea>
-          <input type="submit" name="send" value="Отправить отзыв">
-        </form>
-      </section>
+            <label for="email-field">Электронная почта*:</label>
+            <input type="email" name="email" id="email-field" placeholder="Введите e-mail">
+          </fieldset>
+        </section>
+        <section class="impression">
+          <h2 class="impression__title">Ваше общее впечатление:</h2>
+          <fieldset class="impression__form">
+            <input type="radio" name="impression" value="a" checked id="rather-positive">
+            <label for="rather-positive">Скорее положительное</label>
 
+            <input type="radio" name="impression" value="b" id="rather-negative">
+            <label for="rather-negative">Скорее отрицательное</label>
 
+            <input type="radio" name="impression" value="c" id="hard-to-say">
+            <label for="hard-to-say">Затрудняюсь ответить</label>
+          </fieldset>
+        </section>
+        <section class="sightseeings">
+          <h2 class="sightseeings__title">Посещенные достопримечательности:</h2>
+          <fieldset class="sightseeings__checkboxes">
+              <ul class="object-list">
+              <li class="object-list__item"><input type="checkbox" name="devilbridge" id="bridge-field" checked>
+              <label for="bridge-field">Мост Дьявола</label></li>
+              <li class="object-list__item"><input type="checkbox" name="bellrock" id="bellrock-field" checked>
+              <label for="bellrock-field">Гора-Колокол</label></li>
+              <li class="object-list__item"><input type="checkbox" name="slidepark" id="slidepark-field" checked>
+              <label for="slidepark-field">Слайд-Парк</label></li>
+              <li class="object-list__item"><input type="checkbox" name="redrocks" id="redrocks-field">
+              <label for="redrocks-field">Красные скалы</label></li>
+            </ul>
+          </fieldset>
+        </section>
+        <section class="emotions">
+          <form class="emotions__form">
+            <label class="emotions__title" for="letter-field">Опишите свои эмоции:</label>
+            <textarea name="letter" rows="8" cols="16" id="letter-field" placeholder="Опишите подробно все свои восторги"></textarea>
+            <input type="submit" value="Отправить отзыв">
+          </form>
+        </section>
+      </form>
     </main>
 
     <footer class="page-footer">
