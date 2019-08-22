@@ -1,1 +1,16 @@
-background-color: @nav-color;
+@media (min-width: @tablet-width) {
+  .main-nav__list {
+    min-height: 56px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-nav__toggle,
+  .main-nav__cross {
+    display: none;
+  }
+
+  .main-nav {
+    position: relative;
+  }
+}

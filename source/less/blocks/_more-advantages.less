@@ -22,3 +22,27 @@
 .more-advantages__description {
   font-size: 14px;
 }
+
+@media (min-width: @tablet-width) {
+  .more-advantages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .more-advantages__item {
+    width: 33%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .more-advantages__item:nth-of-type(2){
+    order: 3
+  }
+
+  .more-advantages__item:nth-of-type(3){
+    order: 2;
+  }
+}

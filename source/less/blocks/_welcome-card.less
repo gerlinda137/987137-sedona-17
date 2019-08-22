@@ -3,4 +3,24 @@
   background-color: #e1eff8;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+}
+
+@media (min-width: @tablet-width) {
+  .welcome-card {
+    height: 518px;
+    background-size: cover;
+  }
+  .welcome-card__drawn-text {
+    margin: auto;
+    width: 460px;
+    height: 350px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .welcome-card__drawn-text {
+    margin: auto;
+  }
+
 }
