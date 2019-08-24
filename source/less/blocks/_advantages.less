@@ -56,9 +56,10 @@
     flex-wrap: wrap;
 
     &--brief {
-      width: 33%;
+      width: calc(100%/3);
       box-sizing: border-box;
       text-align: center;
+      flex-direction: column;
     }
   }
 
@@ -75,6 +76,21 @@
 
   .advantages__item-box{
     width: 100%;
+    display: flex;
+  }
+
+  .advantages__item-box_reverse{
+    .advantages__item-text{
+      order: 2;
+    }
+
+    .advantages__image{
+      order: 1;
+    }
+  }
+
+  .advantages__image-box {
+    width: calc(100%*2/3);
     display: flex;
   }
 }
@@ -94,5 +110,15 @@
 
   .advantages__item:nth-child(2) {
     width: 100%;
+  }
+
+  .advantages__item-box_reverse{
+    .advantages__item-text{
+      order: 2;
+    }
+
+    .advantages__image{
+      order: 1;
+    }
   }
 }

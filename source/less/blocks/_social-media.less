@@ -19,11 +19,28 @@
   position: relative;
   width: 46px;
   height: 48px;
-  margin: 6px;
+  margin: 3px;
   background-color: @nav-color;
+
+  svg{
+    fill: #ffffff;
+    display: flex;
+    justify-content: center;
+  }
+
+  svg:active {
+    opacity: 0.3;
+  }
+
+  &:hover [href]{
+    background-color: @social-button-hover;
+  }
 }
 
-.social-media__icon {
-  fill: #ffffff;
-  margin: 0 auto;
+.social-media__button:hover {
+  background-color: @social-button-hover;
+}
+
+.social-media__button:active {
+  background-color: @social-button-active;
 }

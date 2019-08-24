@@ -2,6 +2,7 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .photos__logo {
@@ -18,4 +19,42 @@
 .photos__description {
   font-size: 14px;
   line-height: 24px;
+}
+
+@media (min-width: @tablet-width) {
+  .photos__logo {
+    height: 80px;
+    width: 460px;
+  }
+
+  .photos__wrapper {
+    height: 308px;
+  }
+
+  .photos__title {
+    font-size: 30px;
+  }
+
+  .photo__title-box {
+    display: flex;
+    flex-direction: column;
+    width: 428px;
+    margin: 0 auto;
+    padding-top: 33px;
+  }
+
+  .photos__description {
+    white-space: nowrap;
+  }
+
+  .photo-card__caption-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .photo-card__text-caption {
+    display: flex;
+    flex-direction: column;
+  }
+
 }
